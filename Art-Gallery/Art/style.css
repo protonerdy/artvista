@@ -1,0 +1,171 @@
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Jura&display=swap');
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  /* background: #f1f1f1;*/
+  /* background-image: linear-gradient(to right, #ff6e7f, #bfe9ff);*/
+  background-image: linear-gradient(to right, #9796f0, #fbc7d4);
+
+
+
+}
+
+body.blur {
+  backdrop-filter: blur(8px);
+}
+
+
+
+
+body .container {
+  max-width: 1100px;
+}
+
+#filter-buttons button {
+  border-radius: 3px;
+  background: #fff;
+  border-color: transparent;
+}
+
+#filter-buttons button:hover {
+  background: #ddd;
+}
+
+#filter-buttons button.active {
+  color: #fff;
+  background: #6c757d;
+}
+
+#filterable-cards .card {
+  width: 15rem;
+  border: 2px solid transparent;
+  transition: 1s ease;
+}
+
+#filterable-cards .card:hover {
+  transform: scale(1.2);
+  z-index: 999;
+
+
+}
+
+#filterable-cards .card.hide {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  #filterable-cards {
+    justify-content: center;
+  }
+
+  #filterable-cards .card {
+    width: calc(100% / 2 - 10px);
+  }
+}
+
+
+
+
+.blur-background {
+  backdrop-filter: blur(8px);
+  /* Apply a blur effect */
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.main h1,
+p {
+  font-family: 'Dancing Script', cursive;
+  color: white;
+}
+
+.main h1 {
+  font-size: 55px;
+
+}
+
+.main p {
+  font-size: 30px;
+}
+
+
+.card-text {
+  color: black;
+  font-family: "Poppins", sans-serif;
+}
+
+.icons{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.fa-regular {
+  font-size: 40px;
+  color: black;
+  text-align: center;
+  align-items: center;
+  margin: 20px;
+  margin-bottom: 0;
+  transition: 0.5s ease;
+}
+
+
+/* .fa-regular:hover{
+  color: #0000FF;
+} */
+.fa-thumbs-up{
+  color: black;
+}
+
+/* .fa-thumbs-up:hover{
+  color: #0000FF;
+} */
+.vl {
+  border-left: 3px solid #0000FF;
+  height: 80px;
+  margin-bottom: -12px;
+}
+
+.icons i {
+  color: black; /* Default color */
+  transition: color 0.3s ease; /* Transition for smooth effect */
+  padding: 5px; /* Add padding to create space within the icon */
+}
+
+.icons i.clicked {
+  background-color: #bababa; /* Background color when clicked */
+  border-radius: 50%; /* Add border-radius to create a circular background */
+  /* color: #214ED3;*/
+} 
+
+
+
+.logo{
+  width: 100px;
+  margin-left: 20px;
+  margin-top: 5px;
+}
+
+
+
+.footer {
+  
+  padding: 1.5rem;
+  background-color: transparent;
+  text-align: center;
+
+  margin-top: 8vh;
+}
